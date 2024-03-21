@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block heading %}
+<h2>This is the Index Page</h2>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+<h5>This is the registration form</h5>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" value="submit" class="btn btn-info">SUBMIT</button>
+</form>
+</div>
+{% endblock %}

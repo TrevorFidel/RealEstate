@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block heading %}
+<h2>Here is the Registration form for prospective applicants</h2>
+<form action="">
+    {{form.as_p}}
+</form>
+{% endblock %}
+
+{% block content %}
+<div>
+<form action="">
+    First Name: <input type="text"><br><br>
+    Second Name: <input type="text"><br><br>
+    Age: <input type="text"><br><br>
+<!--    Gender: <input type="text"><br><br>-->
+        Gender:
+        <input type="radio"name="gender"value="Male" checked >Male
+         <input type="radio"name="gender" value="Female">Female<br><br>
+    Marital status:<input type="text"><br><br>
+<!--    Location: <input type="text"><br><br>-->
+    Location:
+    <input type="checkbox" name="location" value="Nairobi">Nairobi
+    <input type="checkbox" name="location" value="Kitale"  checked>Kitale
+    <input type="checkbox" name="location" value="Meru">Meru
+    <input type="checkbox" name="location" value="Muranga">Muranga<br><br>
+    country:
+    <select name="dropdown"
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Germany">Germany</option>
+            <option value="Australia">Austalia</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="save">
+</form>
+
+<form action=""><br><br>
+    <input type="text" value="" placeholder="Enter username"><br><br>
+    <input type="text" value="" placeholder="password"><br><br>
+    <input type="reset"value=" login">
+    <input type="reset" value="Update">
+</div>
+{% endblock %}

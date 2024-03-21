@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+<section class="navigation-section bg-info px-2 py-3">
+<button class="btn btn-danger">HOME</button>
+<button class="btn btn-warning">ABOUT US</button>
+<button class="btn btn-dark">CONTACT</button>
+<button class="btn btn-light">REGISTER</button>
+<hr>
+</section>
+{% block heading %}
+
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
